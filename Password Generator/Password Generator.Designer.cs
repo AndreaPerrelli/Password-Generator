@@ -1,4 +1,6 @@
-﻿namespace Password_Generator
+﻿using System;
+
+namespace Password_Generator
 {
     partial class Form1
     {
@@ -157,7 +159,7 @@
             //
             // pathFileSalvato
             //
-            this.pathFileSalvato = @"E:\Password\password.txt";
+            this.pathFileSalvato = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + @"\Documents\password.txt";
 
             // 
             // Form1
