@@ -108,9 +108,9 @@ namespace Password_Generator
 
             }
 
-            stringaDaSalvare = new List<String> { "Nome Sito " + txtboxNomeSito.Text, 
-                                                  "Nome Utente/Email " + txtboxNomeUtente.Text, 
-                                                  "Password Generata " + passwordGenerata };
+            stringaDaSalvare = new List<String> { Properties.Resources.lblNomeSito + txtboxNomeSito.Text, 
+                                                  Properties.Resources.lblNomeUtente + txtboxNomeUtente.Text, 
+                                                  Properties.Resources.lblPasswordOttenuta + passwordGenerata };
 
 
             return passwordGenerata;
@@ -126,7 +126,7 @@ namespace Password_Generator
                     File.AppendAllText(pathFileSalvato, stringa + Environment.NewLine);
                 }
 
-                MessageBox.Show("Salvataggio password avvenuto con successo, path : " + pathFileSalvato, "successo");
+                MessageBox.Show(Properties.Resources.salvataggioPassword + pathFileSalvato, "successo");
             } else
             {
                 File.AppendAllText(pathFileSalvato, Environment.NewLine);
@@ -135,7 +135,7 @@ namespace Password_Generator
                     File.AppendAllText(pathFileSalvato, stringa + Environment.NewLine);
                 }
 
-                MessageBox.Show("Salvataggio password avvenuto con successo, path : " + pathFileSalvato, "successo");
+                MessageBox.Show(Properties.Resources.salvataggioPassword + pathFileSalvato, "successo");
             }
 
         }

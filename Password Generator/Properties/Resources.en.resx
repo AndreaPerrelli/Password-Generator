@@ -118,21 +118,21 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="btnGeneraPassword" xml:space="preserve">
-    <value>Genera Password </value>
+    <value>Generate Password </value>
   </data>
   <data name="btnSalvaPassword" xml:space="preserve">
-    <value>Salva Password</value>
+    <value>Save Password</value>
   </data>
   <data name="lblNomeSito" xml:space="preserve">
-    <value>Nome Sito </value>
+    <value>Site Name </value>
   </data>
   <data name="lblNomeUtente" xml:space="preserve">
-    <value>Nome Utente/Email </value>
+    <value>Username/Email </value>
   </data>
   <data name="lblPasswordOttenuta" xml:space="preserve">
-    <value>Password Ottenuta</value>
+    <value>Obtained Password</value>
   </data>
   <data name="salvataggioPassword" xml:space="preserve">
-    <value>password salvata con successo, path : </value>
+    <value>password saved successfully, path : </value>
   </data>
 </root>

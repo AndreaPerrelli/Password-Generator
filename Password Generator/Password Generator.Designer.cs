@@ -30,6 +30,7 @@ namespace Password_Generator
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lblNomeSito = new System.Windows.Forms.Label();
             this.txtboxNomeSito = new System.Windows.Forms.TextBox();
             this.lblNomeUtente = new System.Windows.Forms.Label();
@@ -46,115 +47,88 @@ namespace Password_Generator
             // 
             // lblNomeSito
             // 
-            this.lblNomeSito.AutoSize = true;
+            resources.ApplyResources(this.lblNomeSito, "lblNomeSito");
             this.lblNomeSito.ForeColor = System.Drawing.Color.LightGreen;
-            this.lblNomeSito.Location = new System.Drawing.Point(299, 31);
             this.lblNomeSito.Name = "lblNomeSito";
-            this.lblNomeSito.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblNomeSito.Size = new System.Drawing.Size(113, 13);
-            this.lblNomeSito.TabIndex = 0;
-            this.lblNomeSito.Text = "   Inserire nome sito     ";
+            this.lblNomeSito.Text = Properties.Resources.lblNomeSito;
             // 
             // txtboxNomeSito
             // 
             this.txtboxNomeSito.BackColor = System.Drawing.Color.Black;
             this.txtboxNomeSito.ForeColor = System.Drawing.Color.LightGreen;
-            this.txtboxNomeSito.Location = new System.Drawing.Point(302, 62);
+            resources.ApplyResources(this.txtboxNomeSito, "txtboxNomeSito");
             this.txtboxNomeSito.Name = "txtboxNomeSito";
-            this.txtboxNomeSito.Size = new System.Drawing.Size(100, 20);
-            this.txtboxNomeSito.TabIndex = 1;
             this.txtboxNomeSito.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // lblNomeUtente
             // 
-            this.lblNomeUtente.AutoSize = true;
+            resources.ApplyResources(this.lblNomeUtente, "lblNomeUtente");
             this.lblNomeUtente.ForeColor = System.Drawing.Color.LightGreen;
-            this.lblNomeUtente.Location = new System.Drawing.Point(299, 109);
             this.lblNomeUtente.Name = "lblNomeUtente";
-            this.lblNomeUtente.Size = new System.Drawing.Size(103, 13);
-            this.lblNomeUtente.TabIndex = 2;
-            this.lblNomeUtente.Text = "Inserire nome utente";
             this.lblNomeUtente.Click += new System.EventHandler(this.label2_Click);
+            this.lblNomeUtente.Text = Properties.Resources.lblNomeUtente;
             // 
             // txtboxNomeUtente
             // 
             this.txtboxNomeUtente.BackColor = System.Drawing.Color.Black;
             this.txtboxNomeUtente.ForeColor = System.Drawing.Color.LightGreen;
-            this.txtboxNomeUtente.Location = new System.Drawing.Point(302, 145);
+            resources.ApplyResources(this.txtboxNomeUtente, "txtboxNomeUtente");
             this.txtboxNomeUtente.Name = "txtboxNomeUtente";
-            this.txtboxNomeUtente.Size = new System.Drawing.Size(100, 20);
-            this.txtboxNomeUtente.TabIndex = 3;
             // 
             // btnGeneraPassword
             // 
             this.btnGeneraPassword.BackColor = System.Drawing.Color.Black;
             this.btnGeneraPassword.ForeColor = System.Drawing.Color.LightGreen;
-            this.btnGeneraPassword.Location = new System.Drawing.Point(298, 212);
+            resources.ApplyResources(this.btnGeneraPassword, "btnGeneraPassword");
             this.btnGeneraPassword.Name = "btnGeneraPassword";
-            this.btnGeneraPassword.Size = new System.Drawing.Size(114, 23);
-            this.btnGeneraPassword.TabIndex = 4;
-            this.btnGeneraPassword.Text = "Genera Password";
             this.btnGeneraPassword.UseVisualStyleBackColor = false;
             this.btnGeneraPassword.Click += new System.EventHandler(this.btnGeneraPassword_Click);
+            this.btnGeneraPassword.Text = Properties.Resources.btnGeneraPassword;
             // 
             // lblPasswordOttenuta
             // 
-            this.lblPasswordOttenuta.AutoSize = true;
+            resources.ApplyResources(this.lblPasswordOttenuta, "lblPasswordOttenuta");
             this.lblPasswordOttenuta.ForeColor = System.Drawing.Color.LightGreen;
-            this.lblPasswordOttenuta.Location = new System.Drawing.Point(299, 267);
             this.lblPasswordOttenuta.Name = "lblPasswordOttenuta";
-            this.lblPasswordOttenuta.Size = new System.Drawing.Size(115, 13);
-            this.lblPasswordOttenuta.TabIndex = 5;
-            this.lblPasswordOttenuta.Text = "   Password Ottenuta   ";
             this.lblPasswordOttenuta.Click += new System.EventHandler(this.label3_Click);
+            this.lblPasswordOttenuta.Text = Properties.Resources.lblPasswordOttenuta;
             // 
             // lblRisultatoPassword
             // 
-            this.lblRisultatoPassword.AutoSize = true;
+            resources.ApplyResources(this.lblRisultatoPassword, "lblRisultatoPassword");
             this.lblRisultatoPassword.ForeColor = System.Drawing.Color.LightGreen;
-            this.lblRisultatoPassword.Location = new System.Drawing.Point(271, 305);
             this.lblRisultatoPassword.Name = "lblRisultatoPassword";
-            this.lblRisultatoPassword.Size = new System.Drawing.Size(35, 13);
-            this.lblRisultatoPassword.TabIndex = 6;
-            this.lblRisultatoPassword.Text = "label4";
-            this.lblRisultatoPassword.Visible = false;
             // 
             // btnSalvaPassword
             // 
             this.btnSalvaPassword.BackColor = System.Drawing.Color.Black;
             this.btnSalvaPassword.ForeColor = System.Drawing.Color.LightGreen;
-            this.btnSalvaPassword.Location = new System.Drawing.Point(285, 339);
+            resources.ApplyResources(this.btnSalvaPassword, "btnSalvaPassword");
             this.btnSalvaPassword.Name = "btnSalvaPassword";
-            this.btnSalvaPassword.Size = new System.Drawing.Size(148, 23);
-            this.btnSalvaPassword.TabIndex = 7;
-            this.btnSalvaPassword.Text = "Salva password in locale";
             this.btnSalvaPassword.UseVisualStyleBackColor = false;
             this.btnSalvaPassword.Click += new System.EventHandler(this.btnSalvaPassword_Click);
+            this.btnSalvaPassword.Text = Properties.Resources.btnSalvaPassword;
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.helpToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
-            this.menuStrip1.TabIndex = 8;
-            this.menuStrip1.Text = "menuStrip1";
             // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem.Text = "Help";
+            resources.ApplyResources(this.helpToolStripMenuItem, "helpToolStripMenuItem");
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.aboutToolStripMenuItem.Text = "About";
+            resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+
 
             //
             // pathFileSalvato
@@ -164,10 +138,9 @@ namespace Password_Generator
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnSalvaPassword);
             this.Controls.Add(this.lblRisultatoPassword);
             this.Controls.Add(this.lblPasswordOttenuta);
@@ -180,7 +153,6 @@ namespace Password_Generator
             this.ForeColor = System.Drawing.Color.OliveDrab;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Password Generator";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
