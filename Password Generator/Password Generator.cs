@@ -1,12 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Password_Generator
@@ -59,7 +53,7 @@ namespace Password_Generator
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-            MessageBox.Show("Password Generator made by Andrea Antonio Perrelli." + System.Environment.NewLine + 
+            MessageBox.Show("Password Generator made by Andrea Antonio Perrelli." + System.Environment.NewLine +
                 "Check https://github.com/AndreaPerrelli/Password-Generator for further updates.", "About");
 
         }
@@ -108,8 +102,8 @@ namespace Password_Generator
 
             }
 
-            stringaDaSalvare = new List<String> { Properties.Resources.lblNomeSito + txtboxNomeSito.Text, 
-                                                  Properties.Resources.lblNomeUtente + txtboxNomeUtente.Text, 
+            stringaDaSalvare = new List<String> { Properties.Resources.lblNomeSito + txtboxNomeSito.Text,
+                                                  Properties.Resources.lblNomeUtente + txtboxNomeUtente.Text,
                                                   Properties.Resources.lblPasswordOttenuta + passwordGenerata };
 
 
@@ -117,7 +111,7 @@ namespace Password_Generator
         }
         private void SalvaPassword()
         {
-            if(!File.Exists(pathFileSalvato))
+            if (!File.Exists(pathFileSalvato))
             {
                 File.Create(pathFileSalvato).Dispose();
                 File.AppendAllText(pathFileSalvato, Environment.NewLine);
@@ -127,7 +121,8 @@ namespace Password_Generator
                 }
 
                 MessageBox.Show(Properties.Resources.salvataggioPassword + pathFileSalvato, "successo");
-            } else
+            }
+            else
             {
                 File.AppendAllText(pathFileSalvato, Environment.NewLine);
                 foreach (var stringa in stringaDaSalvare)
