@@ -117,11 +117,21 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AiutoMenuItem" xml:space="preserve">
+    <value>Help</value>
+  </data>
   <data name="btnGeneraPassword" xml:space="preserve">
     <value>Generate Password </value>
   </data>
   <data name="btnSalvaPassword" xml:space="preserve">
     <value>Save Password</value>
+  </data>
+  <data name="Informazioni" xml:space="preserve">
+    <value>Password Generator made by Andrea Antonio Perrelli.
+Check https://github.com/AndreaPerrelli/Password-Generator for further updates.</value>
+  </data>
+  <data name="InformazioniMenuItem" xml:space="preserve">
+    <value>About</value>
   </data>
   <data name="lblNomeSito" xml:space="preserve">
     <value>Site Name </value>

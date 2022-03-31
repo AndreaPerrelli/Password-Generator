@@ -61,6 +61,15 @@ namespace Password_Generator.Properties {
         }
         
         /// <summary>
+        ///   Cerca una stringa localizzata simile a Aiuto.
+        /// </summary>
+        internal static string AiutoMenuItem {
+            get {
+                return ResourceManager.GetString("AiutoMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Cerca una stringa localizzata simile a Genera Password .
         /// </summary>
         internal static string btnGeneraPassword {
@@ -75,6 +84,25 @@ namespace Password_Generator.Properties {
         internal static string btnSalvaPassword {
             get {
                 return ResourceManager.GetString("btnSalvaPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a Generatore Password creato da Andrea Antonio Perrelli. 
+        ///Controlla il repository https://github.com/AndreaPerrelli/Password-Generator per ulteriori aggiornamenti..
+        /// </summary>
+        internal static string Informazioni {
+            get {
+                return ResourceManager.GetString("Informazioni", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a Informazioni.
+        /// </summary>
+        internal static string InformazioniMenuItem {
+            get {
+                return ResourceManager.GetString("InformazioniMenuItem", resourceCulture);
             }
         }
         

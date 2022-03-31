@@ -50,7 +50,6 @@ namespace Password_Generator
             resources.ApplyResources(this.lblNomeSito, "lblNomeSito");
             this.lblNomeSito.ForeColor = System.Drawing.Color.LightGreen;
             this.lblNomeSito.Name = "lblNomeSito";
-            this.lblNomeSito.Text = Properties.Resources.lblNomeSito;
             // 
             // txtboxNomeSito
             // 
@@ -66,7 +65,6 @@ namespace Password_Generator
             this.lblNomeUtente.ForeColor = System.Drawing.Color.LightGreen;
             this.lblNomeUtente.Name = "lblNomeUtente";
             this.lblNomeUtente.Click += new System.EventHandler(this.label2_Click);
-            this.lblNomeUtente.Text = Properties.Resources.lblNomeUtente;
             // 
             // txtboxNomeUtente
             // 
@@ -81,9 +79,9 @@ namespace Password_Generator
             this.btnGeneraPassword.ForeColor = System.Drawing.Color.LightGreen;
             resources.ApplyResources(this.btnGeneraPassword, "btnGeneraPassword");
             this.btnGeneraPassword.Name = "btnGeneraPassword";
+            this.btnGeneraPassword.Text = global::Password_Generator.Properties.Resources.btnGeneraPassword;
             this.btnGeneraPassword.UseVisualStyleBackColor = false;
             this.btnGeneraPassword.Click += new System.EventHandler(this.btnGeneraPassword_Click);
-            this.btnGeneraPassword.Text = Properties.Resources.btnGeneraPassword;
             // 
             // lblPasswordOttenuta
             // 
@@ -91,7 +89,6 @@ namespace Password_Generator
             this.lblPasswordOttenuta.ForeColor = System.Drawing.Color.LightGreen;
             this.lblPasswordOttenuta.Name = "lblPasswordOttenuta";
             this.lblPasswordOttenuta.Click += new System.EventHandler(this.label3_Click);
-            this.lblPasswordOttenuta.Text = Properties.Resources.lblPasswordOttenuta;
             // 
             // lblRisultatoPassword
             // 
@@ -105,9 +102,9 @@ namespace Password_Generator
             this.btnSalvaPassword.ForeColor = System.Drawing.Color.LightGreen;
             resources.ApplyResources(this.btnSalvaPassword, "btnSalvaPassword");
             this.btnSalvaPassword.Name = "btnSalvaPassword";
+            this.btnSalvaPassword.Text = global::Password_Generator.Properties.Resources.btnSalvaPassword;
             this.btnSalvaPassword.UseVisualStyleBackColor = false;
             this.btnSalvaPassword.Click += new System.EventHandler(this.btnSalvaPassword_Click);
-            this.btnSalvaPassword.Text = Properties.Resources.btnSalvaPassword;
             // 
             // menuStrip1
             // 
@@ -122,19 +119,14 @@ namespace Password_Generator
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             resources.ApplyResources(this.helpToolStripMenuItem, "helpToolStripMenuItem");
+            this.helpToolStripMenuItem.Text = Properties.Resources.AiutoMenuItem;
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
-
-
-            //
-            // pathFileSalvato
-            //
-            this.pathFileSalvato = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + @"\Documents\password.txt";
-
+            this.aboutToolStripMenuItem.Text = Properties.Resources.InformazioniMenuItem;
             // 
             // Form1
             // 

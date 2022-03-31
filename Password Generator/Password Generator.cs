@@ -52,9 +52,7 @@ namespace Password_Generator
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
-            MessageBox.Show("Password Generator made by Andrea Antonio Perrelli." + System.Environment.NewLine +
-                "Check https://github.com/AndreaPerrelli/Password-Generator for further updates.", "About");
+            MessageBox.Show(Properties.Resources.Informazioni, "Informazioni");
 
         }
 
